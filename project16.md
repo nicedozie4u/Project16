@@ -15,6 +15,8 @@ The following outlines the steps taken:
 ---
 After creating an IAM user with AdministrativeAccess permissions in AWS and acquiring the access key and secret access key, 
 
+![](./images/create%20user.png)
+
 ![](./images/create%20group.png)
 
 ![](./images/create%20IAM%20user.png)
