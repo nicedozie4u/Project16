@@ -51,7 +51,7 @@ the following step was taken:
 
 - Configuring access file with the **Access key** and **secret access key**: `aws configure`
 
-  ![](./Images/images16/aws%20configure.PNG)
+  ![](./images/python%20show%20s3%20bucket.png)
 
 After configuring authentication and installed **boto3**, I'll ensure i can programmatically access my **AWS account** by running following commands in **>python:**  
 
