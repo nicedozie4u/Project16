@@ -153,11 +153,7 @@ Add below configuration to the **main.tf** file:
 ```
 - Run: `terraform plan` and `terraform apply`
 
-  ![](./images/refactor%20code01.png)
-
-  ![](./images/refactor%20code02.png)
-
-  ![](./images/refactor%20code03.png)
+  
 
 - Checked my aws console to confirm if the VPC and the subnets has been created  
 
@@ -171,8 +167,7 @@ Add below configuration to the **main.tf** file:
 
   `terraform destroy`  
 
-  ![](./Images/images16/terra%20dest.PNG)
-  ![](./Images/images16/terra%20dest%202.PNG)
+  ![](./images/First%20destroy.png)
 
 ### **STEP 3: Refactoring The Codes**
 ---
@@ -181,7 +176,7 @@ Add below configuration to the **main.tf** file:
 - Starting with the **Provider block** Declaring a variable named **region** and giving it a default value, and updating the provider section by referring to the declared variable. 
   ```
   variable "region" {
-        default = "eu-west-2"
+        default = "eu-west-1"
     }
 
     provider "aws" {
@@ -191,7 +186,7 @@ Add below configuration to the **main.tf** file:
 - Do the same to **cidr** value in the **vpc** block, and all the other arguments.  
   ```
   variable "region" {
-        default = "eu-west-2"
+        default = "eu-west-1"
     }
 
     variable "vpc_cidr" {
@@ -286,9 +281,11 @@ Add below configuration to the **main.tf** file:
   
   }
   ```
-  ![](./Images/images16/refactor%20code%201.PNG)
+  ![](./images/refactor%20code01.png)
 
-  ![](./Images/images16/refactor%20code%202.PNG)
+  ![](./images/refactor%20code02.png)
+
+  ![](./images/refactor%20code03.png)
 
 ### **STEP 4: Introducing Variables.tf And terraform.tfvars**
 ---
