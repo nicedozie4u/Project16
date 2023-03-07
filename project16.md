@@ -43,7 +43,6 @@ the following step was taken:
 
 `curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV@.pkg"`  
 
-    see: [AWS CLI documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 - To confirm installation Start menu > cmd. Then type `aws --version`
 
@@ -51,7 +50,7 @@ the following step was taken:
 
 - Configuring access file with the **Access key** and **secret access key**: `aws configure`
 
-  ![](./images/python%20show%20s3%20bucket.png)
+  
 
 After configuring authentication and installed **boto3**, I'll ensure i can programmatically access my **AWS account** by running following commands in **>python:**  
 
@@ -62,19 +61,21 @@ After configuring authentication and installed **boto3**, I'll ensure i can prog
   for bucket in s3.buckets.all():
       print(bucket.name)
   ```    
-  ![](./Images/images16/test%20aws%20cli.PNG)
+  ![](./images/python%20show%20s3%20bucket.png)
+
+  ![](./images/show%20s3%20bucket.png)
 
 - Using powershell admin mode, I Install [Terraform](https://docs.chocolatey.org/en-us/choco/setup#:~:text=First%2C%20ensure%20that%20you%20are,for%20the%20command%20to%20complete.) on my windows machine using [Chocolatey](https://docs.chocolatey.org/en-us/choco/setup#:~:text=First%2C%20ensure%20that%20you%20are,for%20the%20command%20to%20complete.) package management system.
 
-  `choco install terraform`
-
-  ![](./Images/images16/inst%20terraform.PNG)
 
 - Confirm terraform has been installed successfully
 
   On powershell run: `terraform help`
 
-  ![](./Images/images16/confirm%20terra.PNG)
+
+  ![](./images/install%20Terraform.png)
+
+
 
 ### **STEP 1: Creating VPC Resource**
 ---
