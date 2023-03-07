@@ -116,9 +116,7 @@ After configuring authentication and installed **boto3**, I'll ensure i can prog
 
    ![](./images/first%20apply.png)
 
-   ![](./images/VPC%20created.png)
-
-   ![](./images/subnets%20created.png)
+  
 
 - A new file **terraform.tfstate** is created as a result of the above command which Terraform uses to keeps itself up to date with the exact state of the infrastructure and **terraform.tfstate.lock.info** file which Terraform uses to track who is running its code against the infrastructure at any point in time.
 
@@ -163,9 +161,9 @@ Add below configuration to the **main.tf** file:
 
 - Checked my aws console to confirm if the VPC and the subnets has been created  
 
-  ![](./Images/images16/vpc%20on%20console.PNG)
+   ![](./images/VPC%20created.png)
 
-  ![](./Images/images16/subnet%20on%20console.PNG)
+   ![](./images/subnets%20created.png)
 
 **NOTE:** So far we have declared multiple resource blocks for each subnet in the code. Also, Both the **availability_zone** and **cidr_block** arguments are **hard coded**, which is not the best practice. So, we need to optimize this by introducing a **count** argument. 
 
