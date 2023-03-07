@@ -70,7 +70,7 @@ After configuring authentication and installed **boto3**, I'll ensure i can prog
 
 - Confirm terraform has been installed successfully
 
-  On powershell run: `terraform help`
+  On Terminal or Powershell run: `terraform help`
 
 
   ![](./images/install%20Terraform.png)
@@ -116,6 +116,10 @@ After configuring authentication and installed **boto3**, I'll ensure i can prog
 
    ![](./images/first%20apply.png)
 
+   ![](./images/VPC%20created.png)
+
+   ![](./images/subnets%20created.png)
+
 - A new file **terraform.tfstate** is created as a result of the above command which Terraform uses to keeps itself up to date with the exact state of the infrastructure and **terraform.tfstate.lock.info** file which Terraform uses to track who is running its code against the infrastructure at any point in time.
 
 ### **STEP 2: Creating Subnet Resources**
@@ -151,9 +155,11 @@ Add below configuration to the **main.tf** file:
 ```
 - Run: `terraform plan` and `terraform apply`
 
-  ![](./Images/images16/terra%20plan.PNG)
+  ![](./images/refactor%20code01.png)
 
-  ![](./Images/images16/terra%20apply.PNG)
+  ![](./images/refactor%20code02.png)
+
+  ![](./images/refactor%20code03.png)
 
 - Checked my aws console to confirm if the VPC and the subnets has been created  
 
