@@ -339,10 +339,10 @@ preferred_number_of_public_subnets = 2
 
   - VPC
     
-    ![](./Images/images16/vpc%20ref.PNG)
+    ![](./images/VPC%20created.png)
 
   - subnet
 
-    ![](./Images/images16/subnet%20ref.PNG) 
+    ![](./images/subnets%20created.png) 
 
 ### **END OF PROJECT ...**     
