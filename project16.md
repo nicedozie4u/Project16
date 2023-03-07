@@ -65,7 +65,7 @@ After configuring authentication and installed **boto3**, I'll ensure i can prog
 
   ![](./images/show%20s3%20bucket.png)
 
-- Using powershell admin mode, I Install [Terraform](https://docs.chocolatey.org/en-us/choco/setup#:~:text=First%2C%20ensure%20that%20you%20are,for%20the%20command%20to%20complete.) on my windows machine using [Chocolatey](https://docs.chocolatey.org/en-us/choco/setup#:~:text=First%2C%20ensure%20that%20you%20are,for%20the%20command%20to%20complete.) package management system.
+- If you are using Windows use powershell admin mode, to Install [Terraform](https://docs.chocolatey.org/en-us/choco/setup#:~:text=First%2C%20ensure%20that%20you%20are,for%20the%20command%20to%20complete.) on your windows machine using [Chocolatey](https://docs.chocolatey.org/en-us/choco/setup#:~:text=First%2C%20ensure%20that%20you%20are,for%20the%20command%20to%20complete.) package management system.
 
 
 - Confirm terraform has been installed successfully
@@ -100,7 +100,7 @@ After configuring authentication and installed **boto3**, I'll ensure i can prog
 
   `terraform init`
 
-  ![](./Images/images16/terraform%20init.PNG)
+  ![](./images/terraform%20init.png)
 
   **Note** A new directory has been created: **.terraform\....** This is where Terraform keeps **plugins.** Generally, it is safe to delete this folder. It just means that you must execute terraform init again, to download them.
 
@@ -108,14 +108,13 @@ After configuring authentication and installed **boto3**, I'll ensure i can prog
 
   `terraform plan`  
 
-  ![](./Images/images16/teraform%20plan.PNG)
+  ![](./images/terraform%20plan.png)
 
  - Proceed to execute the plan: 
  
    `terraform apply`
 
-   ![](./Images/images16/terraform%20apply%201.PNG)
-   ![](./Images/images16/terraform%20apply%202.PNG)
+   ![](./images/first%20apply.png)
 
 - A new file **terraform.tfstate** is created as a result of the above command which Terraform uses to keeps itself up to date with the exact state of the infrastructure and **terraform.tfstate.lock.info** file which Terraform uses to track who is running its code against the infrastructure at any point in time.
 
