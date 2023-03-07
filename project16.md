@@ -84,7 +84,7 @@ After configuring authentication and installed **boto3**, I'll ensure i can prog
 - Entering the following configuration which adds **AWS** as a **provider** and a resource to create a **VPC** in the **main.tf** file:
   ```
   provider "aws" {
-  region = "eu-west-2"
+  region = "eu-west-1"
   }
 
   # Create VPC
@@ -300,7 +300,7 @@ Add below configuration to the **main.tf** file:
 - Setting values for each of the variables:
 
 ```
-region = "eu-central-1"
+region = "eu-west-1"
 
 vpc_cidr = "172.16.0.0/16" 
 
