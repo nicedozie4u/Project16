@@ -33,7 +33,6 @@ the following step was taken:
 
 ![](./images/create%20s3%20bucket.png)
 
-![](./Images/images16/s3%20bucket%202.PNG)
 
 - Find Doc: [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html)
 
