@@ -20,13 +20,6 @@ After creating an IAM user with AdministrativeAccess permissions in AWS and acqu
 ![](./images/create%20IAM%20user.png)
 
 
-
-
-
-![](./images/create%20s3%20bucket.png)
-
-
-
 the following step was taken:
 
 - Creating S3 bucket in AWS for storing Terraform state file and naming it **dozie-dev-terraform-bucket**
