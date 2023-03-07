@@ -316,15 +316,15 @@ preferred_number_of_public_subnets = 2
 ```
 - main.tf
 
-![](./Images/images16/maintf%20ref.PNG)
+![](./images/main.tf.png)
 
 - variables.tf
 
-![](./Images/images16/variabletf%20ref.PNG)
+![](./images/variables.tf.png)
 
 - terraform.tfvars
 
-![](./Images/images16/terraformtfvars%20ref.PNG)
+![](./images/terraform.tfvars.png)
 
 ### **STEP 5: Executing Terraform Apply**
 ---
@@ -332,11 +332,8 @@ preferred_number_of_public_subnets = 2
 
 - Run `terraform plan`
 
-- Run `terraform apply --auto-approve`
 
-![](./Images/images16/tf%20apply%201.PNG)
-
-![](./Images/images16/tf%20apply%202.PNG)
+![](./images/Final%20terraform%20plan.png)
 
 - Check AWS console to confirm my resources are created using **IAC** tool: **Terraform**
 
