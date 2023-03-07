@@ -37,7 +37,13 @@ the following step was taken:
 
   ![](./images/pip%20install%20boto3.png)
 
-- Downloading and running the AWS CLI MSI installer for Windows from the terminal: `C:\> msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi`  
+- Downloading and running the AWS CLI MSI installer for Windows from the terminal: 
+
+```
+curl 
+"https://awscli.amazonaws.com/AWSCLIV2.pkg" 
+
+```  
 
     see: [AWS CLI documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
