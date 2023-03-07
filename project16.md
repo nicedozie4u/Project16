@@ -19,31 +19,31 @@ After creating an IAM user with AdministrativeAccess permissions in AWS and acqu
 
 ![](./images/create%20IAM%20user.png)
 
-![](./images/pip%20install%20boto3.png)
 
-![](./images/aws%20--version.png)
+
+
 
 ![](./images/create%20s3%20bucket.png)
 
 
 
-![](./Images/images16/iam%20user%20policy.PNG)
-
 the following step was taken:
 
-- Creating S3 bucket in AWS for storing Terraform state file and naming it **kris-dev-terraform-bucket**
+- Creating S3 bucket in AWS for storing Terraform state file and naming it **dozie-dev-terraform-bucket**
 
-![](./Images/images16/s3%20bucket%201.PNG)
+![](./images/create%20s3%20bucket.png)
 
 ![](./Images/images16/s3%20bucket%202.PNG)
 
 - Find Doc: [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html)
 
+
+
 - Running the following command on my terminal to install **boto3 (AWS SDK for Python)** including the AWS Common Runtime (CRT) which boto3 uses to incorporate features not otherwise available in the AWS SDK for python: 
 
   `pip install boto3[crt]`
 
-  ![](./Images/images16/install%20boto3.PNG)
+  ![](./images/pip%20install%20boto3.png)
 
 - Downloading and running the AWS CLI MSI installer for Windows from the terminal: `C:\> msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi`  
 
@@ -51,7 +51,7 @@ the following step was taken:
 
 - To confirm installation Start menu > cmd. Then type `aws --version`
 
-  ![](./Images/images16/aws%20version.PNG)
+  ![](./images/aws%20--version.png)
 
 - Configuring access file with the **Access key** and **secret access key**: `aws configure`
 
