@@ -39,11 +39,7 @@ the following step was taken:
 
 - Downloading and running the AWS CLI MSI installer for Windows from the terminal: 
 
-```
-curl 
-"https://awscli.amazonaws.com/AWSCLIV2.pkg" 
-
-```  
+`curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV@.pkg" `  
 
     see: [AWS CLI documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
